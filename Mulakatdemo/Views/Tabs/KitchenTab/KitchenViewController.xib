@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KitchenViewController" customModule="Mulakatdemo" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="myT-Qf-IaL" id="J2I-Rs-94D"/>
+                <outlet property="headerView" destination="evY-os-PJc" id="xMN-3k-bY6"/>
+                <outlet property="labelPopularTitle" destination="DEt-rt-KFZ" id="K5J-xn-jSw"/>
+                <outlet property="storiesCollectionView" destination="3Jy-QN-Gah" id="oyg-sG-Yyc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MZf-jd-FgF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="myT-Qf-IaL">
+                    <rect key="frame" x="18" y="318" width="357" height="534"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="534" id="Esr-3O-gWC"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u61-q2-TBU">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evY-os-PJc" customClass="HeaderView" customModule="Mulakatdemo" customModuleProvider="target">
+                    <rect key="frame" x="16" y="48" width="361" height="67"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Jy-QN-Gah">
+                    <rect key="frame" x="0.0" y="159" width="393" height="120"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YyD-Ro-8sG">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popüler Lezzetler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-rt-KFZ">
+                    <rect key="frame" x="16" y="287" width="150" height="21.666666666666686"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-Qg-TNa">
+                    <rect key="frame" x="-2" y="115" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hPV-7h-irr"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3Hc-po-A9d"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DEt-rt-KFZ" firstAttribute="top" secondItem="evY-os-PJc" secondAttribute="bottom" constant="172" id="40T-TU-p4P"/>
+                <constraint firstItem="DEt-rt-KFZ" firstAttribute="top" secondItem="3Jy-QN-Gah" secondAttribute="bottom" constant="8" id="4Kd-uE-xsE"/>
+                <constraint firstItem="evY-os-PJc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-11" id="8Wd-Xb-ocp"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="9X8-Ao-24V"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-18" id="9i3-Ky-HAW"/>
+                <constraint firstItem="3Jy-QN-Gah" firstAttribute="top" secondItem="6FI-Qg-TNa" secondAttribute="bottom" id="AWx-Y1-920"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="top" secondItem="DEt-rt-KFZ" secondAttribute="bottom" constant="9.3333333333333144" id="C99-DW-Inm"/>
+                <constraint firstItem="evY-os-PJc" firstAttribute="leading" secondItem="myT-Qf-IaL" secondAttribute="leading" constant="-2" id="FcL-Jn-cb3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6FI-Qg-TNa" secondAttribute="trailing" constant="2" id="Hrr-tu-YBb"/>
+                <constraint firstAttribute="trailing" secondItem="myT-Qf-IaL" secondAttribute="trailing" constant="18" id="IYW-Jn-juh"/>
+                <constraint firstItem="6FI-Qg-TNa" firstAttribute="top" secondItem="evY-os-PJc" secondAttribute="bottom" id="Qw9-Fw-E6C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Jy-QN-Gah" secondAttribute="trailing" id="SEc-j8-9Dq"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="259" id="SGS-ws-F0s"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="UQc-Eo-WOt"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-18" id="WbK-Cz-8Zw"/>
+                <constraint firstItem="6FI-Qg-TNa" firstAttribute="centerX" secondItem="3Jy-QN-Gah" secondAttribute="centerX" constant="-2" id="XG6-GB-AI9"/>
+                <constraint firstItem="evY-os-PJc" firstAttribute="leading" secondItem="DEt-rt-KFZ" secondAttribute="leading" id="akQ-vv-vx6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="myT-Qf-IaL" secondAttribute="trailing" constant="18" id="ipM-2G-nEx"/>
+                <constraint firstItem="evY-os-PJc" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="mXq-bB-GeH"/>
+                <constraint firstItem="3Jy-QN-Gah" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oZ5-PL-peN"/>
+                <constraint firstItem="myT-Qf-IaL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="sv9-H4-pZu"/>
+            </constraints>
+            <point key="canvasLocation" x="0.76335877862595414" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

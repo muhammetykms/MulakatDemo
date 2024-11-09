@@ -1,0 +1,83 @@
+{
+  "popularDishes": [
+    {
+      "id": 1,
+      "name": "Nurcan’ın El Lezzetleri",
+      "description": "İçli Köfte",
+      "location": "Kahramanmaraş / Onikişubat",
+      "price": "50 TL",
+      "likes": 100,
+      "images": ["yemek.png", "icli_kofte.png", "icli_kofte2.png"],
+      "ingredients": "Müşteri Tarafından Sağlanabilir, Satıcı Tarafından Sağlanabilir",
+      "deliveryOptions": ["Kapıda Ödeme", "Dondurulmuş", "Adrese Teslim"],
+      "categoryTags": ["İçli Köfte", "Ev yemeği"],
+      "comments": [
+        {
+          "userName": "Nurcan Kara",
+          "profileImage": "profileImage.png",
+          "comment": "Malzemeleri ben temin ettim verdim. İstediğim tarihte teslim edildi.",
+          "date": "06 Haziran 24",
+          "likes": 0
+        }
+      ],
+      "locations": [
+          { "latitude": 37.601703219971505, "longitude": 36.88669138492726 },
+          { "latitude": 37.601021402438505, "longitude": 36.88387855399375 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ev Yemekleri",
+      "description": "İçli Köfte",
+      "location": "Kahramanmaraş / Onikişubat",
+      "price": "30 TL",
+      "likes": 200,
+      "images": ["icli_kofte.png", "icli_kofte2.png"],
+      "ingredients": "Satıcı Tarafından Sağlanabilir",
+      "deliveryOptions": ["Kapıda Ödeme", "Dondurulmuş", "Adrese Teslim"],
+      "categoryTags": ["Tatlı", "Şerbetli Tatlı"],
+      "comments": [
+        {
+          "userName": "Mehmet Ali",
+          "profileImage": "profileImage2.png",
+          "comment": "Künefe çok lezzetliydi, sıcak ve hızlı geldi.",
+          "date": "12 Haziran 24",
+          "likes": 3
+        },
+        {
+          "userName": "Ali",
+          "profileImage": "profileImage.png",
+          "comment": "Künefe çok lezzetliydi, sıcak ve hızlı geldi.",
+          "date": "12 Haziran 24",
+          "likes": 56
+        }
+      ],
+      "locations": [
+          { "latitude": 37.601703219971505, "longitude": 36.88669138492726 },
+          { "latitude": 37.601021402438505, "longitude": 36.88387855399375 }
+      ]
+    },
+  ],
+  "popularStories": [
+    {
+      "id": 1,
+      "title": "Kahramanmaraş Lezzetleri",
+      "image": "kahramanmarasLezzetleri.png"
+    },
+    {
+      "id": 2,
+      "title": "Nurcan'ın Mutfağı",
+      "image": "nurcaninMutfagi.png"
+    },
+    {
+      "id": 3,
+      "title": "Ev Yemeklerim",
+      "image": "icli_kofte2.png"
+    },
+    {
+      "id": 4,
+      "title": "Hatay Sofrası",
+      "image": "hataySofrasi.png"
+    }
+  ]
+}
