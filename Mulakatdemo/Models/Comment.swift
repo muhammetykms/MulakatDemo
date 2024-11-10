@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Kullanıcı yorumlarını temsil eden model
+//Kullanıcı Yorumları Modeli
 struct Comment: Codable {
     let userName: String
     let profileImage: String

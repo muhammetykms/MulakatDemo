@@ -61,7 +61,7 @@ class FoodDetailViewController: UIViewController, UIScrollViewDelegate, UICollec
     }
 
     // MARK: - Load Data
-    /// Görüntülenecek veriyi ekrana yansıtır
+    // Görüntülenecek veriyi ekrana yansıtır
     private func loadData() {
         guard let dish = dish else { return }
         

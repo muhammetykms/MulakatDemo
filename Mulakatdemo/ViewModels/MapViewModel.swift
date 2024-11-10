@@ -10,7 +10,7 @@ class MapViewModel {
         self.dish = dish
     }
     
-    /// Annotations dizisi döndürür
+    // Annotations dizisi döndürür
     func getAnnotations() -> [MKPointAnnotation] {
         return dish.locations.map { location in
             let annotation = MKPointAnnotation()
@@ -20,11 +20,10 @@ class MapViewModel {
         }
     }
     
-    /// Tüm noktaları kapsayacak bir `MKCoordinateRegion` döndürür
+    // Tüm noktaları kapsayacak bir `MKCoordinateRegion` döndürür
     func getRegion() -> MKCoordinateRegion? {
         guard !dish.locations.isEmpty else { return nil }
         
-        // Konumlar aynı şehirdeyse, hepsini kapsayan bir bölge tanımla
         let coordinates = dish.locations.map { $0.clLocationCoordinate }
         
         // Bölgenin merkezini ve span'ini hesapla

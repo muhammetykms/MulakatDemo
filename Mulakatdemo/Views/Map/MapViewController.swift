@@ -71,7 +71,7 @@ extension MapViewController: MKMapViewDelegate {
         return annotationView
     }
     
-    /// Pin üzerindeki detay butonuna basıldığında çağrılır
+    // Map üzerindeki konuma basıldığında bilgi amaçlı alert çağrılır
     func mapView(_ mapView: MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let annotationTitle = annotationView.annotation?.title else { return }
         

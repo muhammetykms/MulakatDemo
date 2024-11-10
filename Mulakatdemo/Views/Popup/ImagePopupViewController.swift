@@ -12,7 +12,6 @@ class ImagePopupViewController: UIViewController, UIScrollViewDelegate {
         setupPageControl()
         loadImagesIntoScrollView()
         
-        // Pan gesture recognizer ekleyelim
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         view.addGestureRecognizer(panGesture)
     }
@@ -50,7 +49,7 @@ class ImagePopupViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = Int(pageIndex)
     }
     
-    // Pan gesture hareketini işle
+    // El hareketi ile popup kapatma
     @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: view)
         
@@ -59,10 +58,8 @@ class ImagePopupViewController: UIViewController, UIScrollViewDelegate {
             view.transform = CGAffineTransform(translationX: 0, y: max(0, translation.y))
         } else if gesture.state == .ended {
             if translation.y > 100 {
-                // Çekme hareketi yeterliyse pop-up'u kapat
                 dismiss(animated: true, completion: nil)
             } else {
-                // Hareket yeterli değilse, başlangıç pozisyonuna geri döndür
                 UIView.animate(withDuration: 0.3) {
                     self.view.transform = .identity
                 }

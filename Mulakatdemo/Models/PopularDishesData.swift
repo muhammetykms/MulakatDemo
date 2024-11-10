@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Popüler yemek ve hikayeleri içeren veri yapısı
+// Popüler yemek ve hikayeler
 struct PopularDishesData: Codable {
     let popularDishes: [Dish]
     let popularStories: [Story]

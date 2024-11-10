@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Hikaye bilgilerini temsil eden model
+//Hikayeler modeli
 struct Story: Codable {
     let id: Int
     let title: String

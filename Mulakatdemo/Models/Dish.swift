@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Yemek bilgilerini temsil eden model
+// Yemek Modeli
 struct Dish: Codable {
     let id: Int
     let name: String
@@ -20,5 +20,5 @@ struct Dish: Codable {
     let deliveryOptions: [String]
     let categoryTags: [String]
     let comments: [Comment]
-    let locations: [Coordinate] // Birden fazla konum koordinatları
+    let locations: [Coordinate]
 }
